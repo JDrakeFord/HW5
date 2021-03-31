@@ -107,17 +107,34 @@ char firstMove()
 //----------------------------------------------------------------
 bool isValidMove(const char board[SIZE_ROW][SIZE_COL], int & row, const int col)
 {
+    bool temp = false;
     //check if user input is within the bounds of the board
+    if(col > -1 && col < 7)
+    {
+        if(board[0][col] == 'o')
+            temp =  true;
+    }
+
     //We do not need to check the row in this place because we are just checking whether or
     //not the user input for column is valid
 
-
         //use a loop to determine the top open location (row) in the chosen column
+        if(temp)
+        {
+            for(int i = SIZE_ROW - 1; i >= 0; i--)
+            {
+                if(board[i][col] == 'o')
+                {
+                    row = i;
+                    break;
+                }
+            }
+        }
+
         //so that the user's avatar piece can be placed
         //If there is not enough room in the column, this should not be a valid move
 
-
-
+        return temp;
 }
 
 
@@ -135,23 +152,29 @@ bool isValidMove(const char board[SIZE_ROW][SIZE_COL], int & row, const int col)
 void playerMove(char board[SIZE_ROW][SIZE_COL], int & playerRow, int & playerCol, const char avatar)
 {
     //set the player's row to the bottom of the board to start out
-
+    playerRow = SIZE_ROW - 1;
 
     //print message declaring who's turn it is
-
+    if(avatar == 'p')
+        cout << "It is player 1's turn." << endl;
+    else
+        cout << "It is player 2's turn." << endl;
 
 
     //Ask player for column and check to see if it was a valid move
-
-
+    int playerRowTemp = playerRow;
+    do{
         //reset the row in case we ran out of room in a previous column
-
+        playerRow = playerRowTemp;
+        cout << "Please enter a column number: (0 - " << SIZE_COL - 1 << ")" << endl;
+        cin >> playerCol;
+    } while(!(isValidMove(board, playerRow, playerCol)));
 
     //once a valid choice has been made, update the board with the player's avatar
-
+    board[playerRow][playerCol] = avatar;
 }
 
-//----------------------------------------------------------------
+//-------------------------------- --------------------------------
 // Name:        checkVertical
 // Parameters:  board(char, 2-dimensional array): the board
 //              currentRow: integer, pass by value,  the current row location
@@ -163,7 +186,20 @@ void playerMove(char board[SIZE_ROW][SIZE_COL], int & playerRow, int & playerCol
 //----------------------------------------------------------------
 bool checkVertical(char board[SIZE_ROW][SIZE_COL], const int currentRow, const int currentCol, const char avatar)
 {
+    int numConsecutive = 0;
+    for(int i = 0; i < SIZE_ROW; i++)
+    {
+        if(board[i][currentCol] == avatar)
+            numConsecutive++;
+        else
+            numConsecutive = 0;
+        if(numConsecutive >= 4)
+        {
+            return true;
+        }
+    }
 
+    return false;
 
 }
 
@@ -180,7 +216,20 @@ bool checkVertical(char board[SIZE_ROW][SIZE_COL], const int currentRow, const i
 //----------------------------------------------------------------
 bool checkHorizontal(char board[SIZE_ROW][SIZE_COL], const int currentRow, const int currentCol, const char avatar)
 {
+    int numConsecutive;
+    for(int i = 0; i < SIZE_COL; i++)
+    {
+        if(board[currentRow][i] == avatar)
+            numConsecutive++;
+        else
+            numConsecutive = 0;
+        if(numConsecutive >= 4)
+        {
+            return true;
+        }
+    }
 
+    return false;
 
 }
 
@@ -248,9 +297,16 @@ bool winGame(char board[SIZE_ROW][SIZE_COL], const int currentRow, const int cur
 {
 
     //Call functions to check for a winning combo
+    if(checkVertical(board, currentRow, currentCol, avatar) ||
+       checkHorizontal(board, currentRow, currentCol, avatar) ||
+       checkDiagonal(board, currentRow, currentCol, avatar))
+    {
+        //Return true if the player has 4 pieces in a row
+        return true;
+    }
+    else
+        return false;
 
-
-    //return true if player has four pieces in a row
 }
 
 //----------------------------------------------------------------
@@ -262,13 +318,18 @@ bool winGame(char board[SIZE_ROW][SIZE_COL], const int currentRow, const int cur
 //----------------------------------------------------------------
 bool keepPlaying()
 {
-
-
     //ask player question, get user input
-
+    char input;
+    do{
+    cout << "Would you like to keep playing? (y/n)" << endl;
+    cin >> input;
+    } while(input == 'y' || input == 'n');
 
     //return appropriate true/false based off of user input
-
+    if(input == 'y')
+        return true;
+    else
+        return false;
 
 }
 
@@ -283,8 +344,10 @@ bool keepPlaying()
 //----------------------------------------------------------------
 void switchPlayer(char & currAvatar)
 {
-
-
+    if(currAvatar == 'p')
+        currAvatar = 'm';
+    else if(currAvatar == 'm')
+        currAvatar = 'p';
 }
 
 int main()
@@ -316,34 +379,44 @@ int main()
     printBoard(board);
 
     //Choose who goes first by calling a function that will set the avatar to the appropriate character
+    avatar = firstMove();
+    cout << avatar << endl;
 
 
     //loop the game to play
     while(!connectFour)
     {
         //call the function that handles the player's moves
+        playerMove(board, playerRow, playerCol, avatar);
 
 
         //print the board again
+        printBoard(board);
 
 
         //check to see if is a winning combo
-
-
+        if(winGame(board, playerRow, playerCol, avatar)){
             //if there is a win, change connectFour variable
             connectFour = true;
-
             //Assign winner's name to winner variable
-
+            if (avatar == 'p')
+                winner = "Player 1";
+            else
+                winner = "Player 2";
             //...and print out a celebratory statement!
-
+            cout << "Congratulations " << winner << "! You've won the game!" << endl;
 
             //check if players want to continue playing
-
+            if (keepPlaying()) {
                 //if yes, reset and print board, and reset the connectFour variable to false
-
+                initBoard(board);
+                printBoard(board);
+                connectFour = false;
+            }
+        }
 
         //Call function to switch player avatars
+        switchPlayer(avatar);
 
     }
 
