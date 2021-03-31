@@ -323,7 +323,7 @@ bool keepPlaying()
     do{
     cout << "Would you like to keep playing? (y/n)" << endl;
     cin >> input;
-    } while(input == 'y' || input == 'n');
+    } while(!(input == 'y' || input == 'n'));
 
     //return appropriate true/false based off of user input
     if(input == 'y')
