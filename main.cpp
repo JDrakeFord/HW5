@@ -216,7 +216,7 @@ bool checkVertical(char board[SIZE_ROW][SIZE_COL], const int currentRow, const i
 //----------------------------------------------------------------
 bool checkHorizontal(char board[SIZE_ROW][SIZE_COL], const int currentRow, const int currentCol, const char avatar)
 {
-    int numConsecutive;
+    int numConsecutive = 0;
     for(int i = 0; i < SIZE_COL; i++)
     {
         if(board[currentRow][i] == avatar)

@@ -1,0 +1,451 @@
+Script started on 2021-03-31 15:36:55-0500
+]0;jdf028@turing: ~/hw5[01;32mjdf028@turing[00m:[01;34m~/hw5[00m$ ./hw5.exe
+[3J[H[2J---------Welcome to Connect-Four!------------
+To win the game, you must place four of your pieces in a row on the board.
+This is a 2-player game. Player1 has the avatar 'p' and Player2 has the avatar 'm'
+You can win by connecting four pieces vertically, horizontally, or diagonally.
+Good Luck!
+           CONNECT FOUR
+      0  1  2  3  4  5  6  
+  0 | o  o  o  o  o  o  o  |
+  1 | o  o  o  o  o  o  o  |
+  2 | o  o  o  o  o  o  o  |
+  3 | o  o  o  o  o  o  o  |
+  4 | o  o  o  o  o  o  o  |
+  5 | o  o  o  o  o  o  o  |
+p
+It is player 1's turn.
+Please enter a column number: (0 - 6)
+0
+           CONNECT FOUR
+      0  1  2  3  4  5  6  
+  0 | o  o  o  o  o  o  o  |
+  1 | o  o  o  o  o  o  o  |
+  2 | o  o  o  o  o  o  o  |
+  3 | o  o  o  o  o  o  o  |
+  4 | o  o  o  o  o  o  o  |
+  5 | p  o  o  o  o  o  o  |
+It is player 2's turn.
+Please enter a column number: (0 - 6)
+1
+           CONNECT FOUR
+      0  1  2  3  4  5  6  
+  0 | o  o  o  o  o  o  o  |
+  1 | o  o  o  o  o  o  o  |
+  2 | o  o  o  o  o  o  o  |
+  3 | o  o  o  o  o  o  o  |
+  4 | o  o  o  o  o  o  o  |
+  5 | p  m  o  o  o  o  o  |
+It is player 1's turn.
+Please enter a column number: (0 - 6)
+0
+           CONNECT FOUR
+      0  1  2  3  4  5  6  
+  0 | o  o  o  o  o  o  o  |
+  1 | o  o  o  o  o  o  o  |
+  2 | o  o  o  o  o  o  o  |
+  3 | o  o  o  o  o  o  o  |
+  4 | p  o  o  o  o  o  o  |
+  5 | p  m  o  o  o  o  o  |
+It is player 2's turn.
+Please enter a column number: (0 - 6)
+1
+           CONNECT FOUR
+      0  1  2  3  4  5  6  
+  0 | o  o  o  o  o  o  o  |
+  1 | o  o  o  o  o  o  o  |
+  2 | o  o  o  o  o  o  o  |
+  3 | o  o  o  o  o  o  o  |
+  4 | p  m  o  o  o  o  o  |
+  5 | p  m  o  o  o  o  o  |
+It is player 1's turn.
+Please enter a column number: (0 - 6)
+0
+           CONNECT FOUR
+      0  1  2  3  4  5  6  
+  0 | o  o  o  o  o  o  o  |
+  1 | o  o  o  o  o  o  o  |
+  2 | o  o  o  o  o  o  o  |
+  3 | p  o  o  o  o  o  o  |
+  4 | p  m  o  o  o  o  o  |
+  5 | p  m  o  o  o  o  o  |
+It is player 2's turn.
+Please enter a column number: (0 - 6)
+1
+           CONNECT FOUR
+      0  1  2  3  4  5  6  
+  0 | o  o  o  o  o  o  o  |
+  1 | o  o  o  o  o  o  o  |
+  2 | o  o  o  o  o  o  o  |
+  3 | p  m  o  o  o  o  o  |
+  4 | p  m  o  o  o  o  o  |
+  5 | p  m  o  o  o  o  o  |
+It is player 1's turn.
+Please enter a column number: (0 - 6)
+0
+           CONNECT FOUR
+      0  1  2  3  4  5  6  
+  0 | o  o  o  o  o  o  o  |
+  1 | o  o  o  o  o  o  o  |
+  2 | p  o  o  o  o  o  o  |
+  3 | p  m  o  o  o  o  o  |
+  4 | p  m  o  o  o  o  o  |
+  5 | p  m  o  o  o  o  o  |
+Congratulations Player 1! You've won the game!
+Would you like to keep playing? (y/n)
+y
+           CONNECT FOUR
+      0  1  2  3  4  5  6  
+  0 | o  o  o  o  o  o  o  |
+  1 | o  o  o  o  o  o  o  |
+  2 | o  o  o  o  o  o  o  |
+  3 | o  o  o  o  o  o  o  |
+  4 | o  o  o  o  o  o  o  |
+  5 | o  o  o  o  o  o  o  |
+It is player 2's turn.
+Please enter a column number: (0 - 6)
+1
+           CONNECT FOUR
+      0  1  2  3  4  5  6  
+  0 | o  o  o  o  o  o  o  |
+  1 | o  o  o  o  o  o  o  |
+  2 | o  o  o  o  o  o  o  |
+  3 | o  o  o  o  o  o  o  |
+  4 | o  o  o  o  o  o  o  |
+  5 | o  m  o  o  o  o  o  |
+It is player 1's turn.
+Please enter a column number: (0 - 6)
+1
+           CONNECT FOUR
+      0  1  2  3  4  5  6  
+  0 | o  o  o  o  o  o  o  |
+  1 | o  o  o  o  o  o  o  |
+  2 | o  o  o  o  o  o  o  |
+  3 | o  o  o  o  o  o  o  |
+  4 | o  p  o  o  o  o  o  |
+  5 | o  m  o  o  o  o  o  |
+It is player 2's turn.
+Please enter a column number: (0 - 6)
+2
+           CONNECT FOUR
+      0  1  2  3  4  5  6  
+  0 | o  o  o  o  o  o  o  |
+  1 | o  o  o  o  o  o  o  |
+  2 | o  o  o  o  o  o  o  |
+  3 | o  o  o  o  o  o  o  |
+  4 | o  p  o  o  o  o  o  |
+  5 | o  m  m  o  o  o  o  |
+It is player 1's turn.
+Please enter a column number: (0 - 6)
+2
+           CONNECT FOUR
+      0  1  2  3  4  5  6  
+  0 | o  o  o  o  o  o  o  |
+  1 | o  o  o  o  o  o  o  |
+  2 | o  o  o  o  o  o  o  |
+  3 | o  o  o  o  o  o  o  |
+  4 | o  p  p  o  o  o  o  |
+  5 | o  m  m  o  o  o  o  |
+It is player 2's turn.
+Please enter a column number: (0 - 6)
+3
+           CONNECT FOUR
+      0  1  2  3  4  5  6  
+  0 | o  o  o  o  o  o  o  |
+  1 | o  o  o  o  o  o  o  |
+  2 | o  o  o  o  o  o  o  |
+  3 | o  o  o  o  o  o  o  |
+  4 | o  p  p  o  o  o  o  |
+  5 | o  m  m  m  o  o  o  |
+It is player 1's turn.
+Please enter a column number: (0 - 6)
+3
+           CONNECT FOUR
+      0  1  2  3  4  5  6  
+  0 | o  o  o  o  o  o  o  |
+  1 | o  o  o  o  o  o  o  |
+  2 | o  o  o  o  o  o  o  |
+  3 | o  o  o  o  o  o  o  |
+  4 | o  p  p  p  o  o  o  |
+  5 | o  m  m  m  o  o  o  |
+It is player 2's turn.
+Please enter a column number: (0 - 6)
+4
+           CONNECT FOUR
+      0  1  2  3  4  5  6  
+  0 | o  o  o  o  o  o  o  |
+  1 | o  o  o  o  o  o  o  |
+  2 | o  o  o  o  o  o  o  |
+  3 | o  o  o  o  o  o  o  |
+  4 | o  p  p  p  o  o  o  |
+  5 | o  m  m  m  m  o  o  |
+Congratulations Player 2! You've won the game!
+Would you like to keep playing? (y/n)
+y
+           CONNECT FOUR
+      0  1  2  3  4  5  6  
+  0 | o  o  o  o  o  o  o  |
+  1 | o  o  o  o  o  o  o  |
+  2 | o  o  o  o  o  o  o  |
+  3 | o  o  o  o  o  o  o  |
+  4 | o  o  o  o  o  o  o  |
+  5 | o  o  o  o  o  o  o  |
+It is player 1's turn.
+Please enter a column number: (0 - 6)
+0
+           CONNECT FOUR
+      0  1  2  3  4  5  6  
+  0 | o  o  o  o  o  o  o  |
+  1 | o  o  o  o  o  o  o  |
+  2 | o  o  o  o  o  o  o  |
+  3 | o  o  o  o  o  o  o  |
+  4 | o  o  o  o  o  o  o  |
+  5 | p  o  o  o  o  o  o  |
+It is player 2's turn.
+Please enter a column number: (0 - 6)
+1
+           CONNECT FOUR
+      0  1  2  3  4  5  6  
+  0 | o  o  o  o  o  o  o  |
+  1 | o  o  o  o  o  o  o  |
+  2 | o  o  o  o  o  o  o  |
+  3 | o  o  o  o  o  o  o  |
+  4 | o  o  o  o  o  o  o  |
+  5 | p  m  o  o  o  o  o  |
+It is player 1's turn.
+Please enter a column number: (0 - 6)
+1
+           CONNECT FOUR
+      0  1  2  3  4  5  6  
+  0 | o  o  o  o  o  o  o  |
+  1 | o  o  o  o  o  o  o  |
+  2 | o  o  o  o  o  o  o  |
+  3 | o  o  o  o  o  o  o  |
+  4 | o  p  o  o  o  o  o  |
+  5 | p  m  o  o  o  o  o  |
+It is player 2's turn.
+Please enter a column number: (0 - 6)
+2
+           CONNECT FOUR
+      0  1  2  3  4  5  6  
+  0 | o  o  o  o  o  o  o  |
+  1 | o  o  o  o  o  o  o  |
+  2 | o  o  o  o  o  o  o  |
+  3 | o  o  o  o  o  o  o  |
+  4 | o  p  o  o  o  o  o  |
+  5 | p  m  m  o  o  o  o  |
+It is player 1's turn.
+Please enter a column number: (0 - 6)
+2
+           CONNECT FOUR
+      0  1  2  3  4  5  6  
+  0 | o  o  o  o  o  o  o  |
+  1 | o  o  o  o  o  o  o  |
+  2 | o  o  o  o  o  o  o  |
+  3 | o  o  o  o  o  o  o  |
+  4 | o  p  p  o  o  o  o  |
+  5 | p  m  m  o  o  o  o  |
+It is player 2's turn.
+Please enter a column number: (0 - 6)
+3
+           CONNECT FOUR
+      0  1  2  3  4  5  6  
+  0 | o  o  o  o  o  o  o  |
+  1 | o  o  o  o  o  o  o  |
+  2 | o  o  o  o  o  o  o  |
+  3 | o  o  o  o  o  o  o  |
+  4 | o  p  p  o  o  o  o  |
+  5 | p  m  m  m  o  o  o  |
+It is player 1's turn.
+Please enter a column number: (0 - 6)
+2
+           CONNECT FOUR
+      0  1  2  3  4  5  6  
+  0 | o  o  o  o  o  o  o  |
+  1 | o  o  o  o  o  o  o  |
+  2 | o  o  o  o  o  o  o  |
+  3 | o  o  p  o  o  o  o  |
+  4 | o  p  p  o  o  o  o  |
+  5 | p  m  m  m  o  o  o  |
+It is player 2's turn.
+Please enter a column number: (0 - 6)
+3
+           CONNECT FOUR
+      0  1  2  3  4  5  6  
+  0 | o  o  o  o  o  o  o  |
+  1 | o  o  o  o  o  o  o  |
+  2 | o  o  o  o  o  o  o  |
+  3 | o  o  p  o  o  o  o  |
+  4 | o  p  p  m  o  o  o  |
+  5 | p  m  m  m  o  o  o  |
+It is player 1's turn.
+Please enter a column number: (0 - 6)
+2
+           CONNECT FOUR
+      0  1  2  3  4  5  6  
+  0 | o  o  o  o  o  o  o  |
+  1 | o  o  o  o  o  o  o  |
+  2 | o  o  p  o  o  o  o  |
+  3 | o  o  p  o  o  o  o  |
+  4 | o  p  p  m  o  o  o  |
+  5 | p  m  m  m  o  o  o  |
+It is player 2's turn.
+Please enter a column number: (0 - 6)
+5
+           CONNECT FOUR
+      0  1  2  3  4  5  6  
+  0 | o  o  o  o  o  o  o  |
+  1 | o  o  o  o  o  o  o  |
+  2 | o  o  p  o  o  o  o  |
+  3 | o  o  p  o  o  o  o  |
+  4 | o  p  p  m  o  o  o  |
+  5 | p  m  m  m  o  m  o  |
+It is player 1's turn.
+Please enter a column number: (0 - 6)
+3
+           CONNECT FOUR
+      0  1  2  3  4  5  6  
+  0 | o  o  o  o  o  o  o  |
+  1 | o  o  o  o  o  o  o  |
+  2 | o  o  p  o  o  o  o  |
+  3 | o  o  p  p  o  o  o  |
+  4 | o  p  p  m  o  o  o  |
+  5 | p  m  m  m  o  m  o  |
+It is player 2's turn.
+Please enter a column number: (0 - 6)
+6
+           CONNECT FOUR
+      0  1  2  3  4  5  6  
+  0 | o  o  o  o  o  o  o  |
+  1 | o  o  o  o  o  o  o  |
+  2 | o  o  p  o  o  o  o  |
+  3 | o  o  p  p  o  o  o  |
+  4 | o  p  p  m  o  o  o  |
+  5 | p  m  m  m  o  m  m  |
+It is player 1's turn.
+Please enter a column number: (0 - 6)
+3
+           CONNECT FOUR
+      0  1  2  3  4  5  6  
+  0 | o  o  o  o  o  o  o  |
+  1 | o  o  o  o  o  o  o  |
+  2 | o  o  p  p  o  o  o  |
+  3 | o  o  p  p  o  o  o  |
+  4 | o  p  p  m  o  o  o  |
+  5 | p  m  m  m  o  m  m  |
+Congratulations Player 1! You've won the game!
+Would you like to keep playing? (y/n)
+q
+Would you like to keep playing? (y/n)
+w
+Would you like to keep playing? (y/n)
+e
+Would you like to keep playing? (y/n)
+r
+Would you like to keep playing? (y/n)
+t
+Would you like to keep playing? (y/n)
+y
+           CONNECT FOUR
+      0  1  2  3  4  5  6  
+  0 | o  o  o  o  o  o  o  |
+  1 | o  o  o  o  o  o  o  |
+  2 | o  o  o  o  o  o  o  |
+  3 | o  o  o  o  o  o  o  |
+  4 | o  o  o  o  o  o  o  |
+  5 | o  o  o  o  o  o  o  |
+It is player 2's turn.
+Please enter a column number: (0 - 6)
+-1
+Please enter a column number: (0 - 6)
+7
+Please enter a column number: (0 - 6)
+8
+Please enter a column number: (0 - 6)
+9
+Please enter a column number: (0 - 6)
+-2
+Please enter a column number: (0 - 6)
+0
+           CONNECT FOUR
+      0  1  2  3  4  5  6  
+  0 | o  o  o  o  o  o  o  |
+  1 | o  o  o  o  o  o  o  |
+  2 | o  o  o  o  o  o  o  |
+  3 | o  o  o  o  o  o  o  |
+  4 | o  o  o  o  o  o  o  |
+  5 | m  o  o  o  o  o  o  |
+It is player 1's turn.
+Please enter a column number: (0 - 6)
+0
+           CONNECT FOUR
+      0  1  2  3  4  5  6  
+  0 | o  o  o  o  o  o  o  |
+  1 | o  o  o  o  o  o  o  |
+  2 | o  o  o  o  o  o  o  |
+  3 | o  o  o  o  o  o  o  |
+  4 | p  o  o  o  o  o  o  |
+  5 | m  o  o  o  o  o  o  |
+It is player 2's turn.
+Please enter a column number: (0 - 6)
+1
+           CONNECT FOUR
+      0  1  2  3  4  5  6  
+  0 | o  o  o  o  o  o  o  |
+  1 | o  o  o  o  o  o  o  |
+  2 | o  o  o  o  o  o  o  |
+  3 | o  o  o  o  o  o  o  |
+  4 | p  o  o  o  o  o  o  |
+  5 | m  m  o  o  o  o  o  |
+It is player 1's turn.
+Please enter a column number: (0 - 6)
+1
+           CONNECT FOUR
+      0  1  2  3  4  5  6  
+  0 | o  o  o  o  o  o  o  |
+  1 | o  o  o  o  o  o  o  |
+  2 | o  o  o  o  o  o  o  |
+  3 | o  o  o  o  o  o  o  |
+  4 | p  p  o  o  o  o  o  |
+  5 | m  m  o  o  o  o  o  |
+It is player 2's turn.
+Please enter a column number: (0 - 6)
+2
+           CONNECT FOUR
+      0  1  2  3  4  5  6  
+  0 | o  o  o  o  o  o  o  |
+  1 | o  o  o  o  o  o  o  |
+  2 | o  o  o  o  o  o  o  |
+  3 | o  o  o  o  o  o  o  |
+  4 | p  p  o  o  o  o  o  |
+  5 | m  m  m  o  o  o  o  |
+It is player 1's turn.
+Please enter a column number: (0 - 6)
+2
+           CONNECT FOUR
+      0  1  2  3  4  5  6  
+  0 | o  o  o  o  o  o  o  |
+  1 | o  o  o  o  o  o  o  |
+  2 | o  o  o  o  o  o  o  |
+  3 | o  o  o  o  o  o  o  |
+  4 | p  p  p  o  o  o  o  |
+  5 | m  m  m  o  o  o  o  |
+It is player 2's turn.
+Please enter a column number: (0 - 6)
+3
+           CONNECT FOUR
+      0  1  2  3  4  5  6  
+  0 | o  o  o  o  o  o  o  |
+  1 | o  o  o  o  o  o  o  |
+  2 | o  o  o  o  o  o  o  |
+  3 | o  o  o  o  o  o  o  |
+  4 | p  p  p  o  o  o  o  |
+  5 | m  m  m  m  o  o  o  |
+Congratulations Player 2! You've won the game!
+Would you like to keep playing? (y/n)
+n
+Good game!
+]0;jdf028@turing: ~/hw5[01;32mjdf028@turing[00m:[01;34m~/hw5[00m$ exit
+exit
+
+Script done on 2021-03-31 15:39:33-0500
