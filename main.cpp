@@ -1,7 +1,7 @@
 /******************************************************************************
 Spring 2021 Programming Foundations I
-Author: Lora Streeter
-Date: March 19, 2021
+Author: Jesse Ford, Jonah Treece
+Date: March 30, 2021
 Purpose: The goal of this assignment is to learn how to manipulate two-dimensional arrays.
 In addition, you will learn to update the contents of the designed array. You will add
 onto the starter code and implement functions to complete this homework assignment.
